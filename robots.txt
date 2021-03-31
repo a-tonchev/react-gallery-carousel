@@ -1,0 +1,4 @@
+# robots.txt for http://rgc.yifanai.com/
+
+User-agent: *
+Allow: *
