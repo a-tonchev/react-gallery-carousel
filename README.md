@@ -188,7 +188,7 @@ To customize the carousel in an imperative manner, use the following handlers (o
 |Name                     |Description|
 |:------------------------|:----------|
 |play()                   |Start the autoplay by setting the `isPlaying` state to true. (Note: need >= v0.2.0)|
-|play()                   |Pause the autoplay by setting the `isPlaying` state to false. (Note: need >= v0.2.0)|
+|pause()                  |Pause the autoplay by setting the `isPlaying` state to false. (Note: need >= v0.2.0)|
 |toggleIsPlaying()        |Toggle the `isPlaying` state. (Note: need >= v0.2.0)|
 |maximize()               |Maximize the carousel by setting the `isMaximized` state to true. (Note: need >= v0.2.0)|
 |minimize()               |Minimize the carousel by setting the `isMaximized` state to false. (Note: need >= v0.2.0)|
