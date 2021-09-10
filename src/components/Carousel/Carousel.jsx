@@ -2,8 +2,8 @@ import React, {
   forwardRef,
   Fragment,
   useCallback,
+  useEffect,
   useImperativeHandle,
-  useLayoutEffect,
   useRef,
   useState
 } from 'react';
@@ -18,6 +18,7 @@ import {
   IndexBoard,
   DotButtons
 } from '../Widgets';
+import isSSR from '../../utils/isSSR';
 import useKeys from '../../utils/useKeys';
 import useSwipe from '../../utils/useSwipe';
 import useTimer from '../../utils/useTimer';
@@ -36,7 +37,7 @@ import { propTypes, defaultProps, getSettings } from './props';
 
 const GalleryCarousel = (props, ref) => {
   /* initialize references */
-  const documentRef = useRef(document);
+  const documentRef = useRef(isSSR ? undefined : document);
   const maximizedBackgroundRef = useRef(null);
   const carouselRef = useRef(null);
   const slidesContainerRef = useRef(null);
@@ -88,7 +89,7 @@ const GalleryCarousel = (props, ref) => {
   const reducedMotion = useMediaQuery('(prefers-reduced-motion: reduce)');
   const isReducedMotion = props.ignoreReducedMotion ? false : reducedMotion;
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     if (isReducedMotion) setIsPlaying(false);
   }, [isReducedMotion, setIsPlaying]);
 
@@ -105,7 +106,11 @@ const GalleryCarousel = (props, ref) => {
     }
   }, [isPlaying, setIsPlaying, wasPlaying, setWasPlaying]);
 
-  useEventListener(document, 'visibilitychange', handleVisibilityChange);
+  useEventListener(
+    isSSR ? undefined : document,
+    'visibilitychange',
+    handleVisibilityChange
+  );
 
   /* handle maximization/minimization and full screen */
   const [isMaximized, setIsMaximized] = useFixedPosition(
@@ -128,9 +133,10 @@ const GalleryCarousel = (props, ref) => {
 
     // calculate transition duration
     const swipedDistance = Math.abs(displacementX);
-    const transitionDistance = hasToUpdate
-      ? Math.abs(slidesRef.current.clientWidth - swipedDistance)
-      : swipedDistance;
+    const transitionDistance =
+      hasToUpdate && slidesRef.current
+        ? Math.abs(slidesRef.current.clientWidth - swipedDistance)
+        : swipedDistance;
     speed = hasToUpdate ? speed : props.swipeRollbackSpeed;
     let duration = transitionDistance / speed;
 
@@ -155,8 +161,10 @@ const GalleryCarousel = (props, ref) => {
       duration = props.autoPlayInterval * 1;
 
     // apply transition duration for the period of duration
-    slidesRef.current.style.transitionDuration = `${duration}ms`;
-    slidesRef.current.setAttribute("is_active", true);
+    if(slidesRef.current) {
+      slidesRef.current.style.transitionDuration = `${duration}ms`;
+      slidesRef.current.setAttribute("is_active", true);
+    }
 
     setTimeout(() => {
       // revert temporary style changes made on the slides for transition and looping
@@ -212,7 +220,7 @@ const GalleryCarousel = (props, ref) => {
   );
 
   // change to the current slide before browser paints
-  useLayoutEffect(() => applyTransitionX(), [applyTransitionX]);
+  useEffect(() => applyTransitionX(), [applyTransitionX]);
 
   /* handle implicit current index update (e.g. +1 or -1) */
   const shouldCalibrateIndex = props.isLoop && nSlides > 1;
@@ -232,8 +240,10 @@ const GalleryCarousel = (props, ref) => {
       } else if (slides.isMaxIndex() && change > 0 && slideMinRef.current) {
         slideMinRef.current.style.transform = `translateX(${slidesMax})`;
       } else {
-        slideMinRef.current.style.transform = null;
-        slideMaxRef.current.style.transform = null;
+        if(slideMinRef.current) {
+          slideMinRef.current.style.transform = null;
+          slideMaxRef.current.style.transform = null;
+        }
       }
     }
 
@@ -262,7 +272,7 @@ const GalleryCarousel = (props, ref) => {
     // update UI
     if (slides.calibrateIndex(change) && shouldCalibrateIndex) {
       // remove carry-over transitionDuration
-      slidesRef.current.style.transitionDuration = null;
+      if (slidesRef.current) slidesRef.current.style.transitionDuration = null;
       applyTransitionX(displacementX);
     }
 
@@ -275,7 +285,11 @@ const GalleryCarousel = (props, ref) => {
 
   const rollBackIndexUpdate = () => updateIndex(0, 0, 0);
 
-  useEventListener(window, 'orientationchange', rollBackIndexUpdate);
+  useEventListener(
+    isSSR ? undefined : window,
+    'orientationchange',
+    rollBackIndexUpdate
+  );
 
   /* handle explicit current index update (e.g. go to slide number 16) */
   const goToIndex = (index) => {

@@ -1,6 +1,7 @@
 import { useCallback, useEffect } from 'react';
 import useEventListener from './useEventListener';
 import useMediaQuery from './useMediaQuery';
+import isSSR from './isSSR';
 
 const useAnchor = (elementRef, isMaximized, ignoreReducedMotion) => {
   const element = elementRef && elementRef.current;
@@ -89,7 +90,7 @@ const useAnchor = (elementRef, isMaximized, ignoreReducedMotion) => {
   useEventListener(elementRef.current, 'click', centerElement);
 
   // center the current element on resize (including orientationchange)
-  useEventListener(window, 'resize', centerElement);
+  useEventListener(isSSR ? undefined : window, 'resize', centerElement);
 };
 
 export default useAnchor;
