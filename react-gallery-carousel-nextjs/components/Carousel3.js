@@ -1,6 +1,5 @@
 import React from 'react';
 import Carousel from 'react-gallery-carousel';
-import 'react-gallery-carousel/dist/index.css';
 
 const Carousel3 = ({ images }) => {
   return (
@@ -18,7 +17,7 @@ const Carousel3 = ({ images }) => {
         </p>
       </header>
       <div className='carousel-container'>
-        <Carousel images={images} isRTL={true} />
+        <Carousel images={images} isRTL />
       </div>
     </section>
   );

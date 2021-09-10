@@ -1,6 +1,5 @@
 import React from 'react';
 import Carousel from 'react-gallery-carousel';
-import 'react-gallery-carousel/dist/index.css';
 
 const Carousel2 = ({ images }) => {
   return (

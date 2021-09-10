@@ -18,7 +18,7 @@ const Carousel3 = ({ images }) => {
         </p>
       </header>
       <div className='carousel-container'>
-        <Carousel images={images} isRTL={true} />
+        <Carousel images={images} isRTL />
       </div>
     </section>
   );

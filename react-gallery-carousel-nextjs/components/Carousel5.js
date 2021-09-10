@@ -1,8 +1,6 @@
 import React, { useRef } from 'react';
 import Carousel from 'react-gallery-carousel';
-import 'react-gallery-carousel/dist/index.css';
 import { Button } from 'react-responsive-button';
-import 'react-responsive-button/dist/index.css';
 
 const Carousel5 = ({ images }) => {
   const carouselRef = useRef(null);
