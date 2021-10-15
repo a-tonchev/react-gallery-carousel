@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Link } from 'gatsby';
+import CustomLink from '@/components/inputs/CustomLink';
 
 // styles
 const pageStyles = {
@@ -45,7 +46,7 @@ const NotFoundPage = () => {
           </>
         ) : null}
         <br />
-        <Link to='/'>Go home</Link>.
+        <CustomLink to='/'>Go home</CustomLink>.
       </p>
     </main>
   );

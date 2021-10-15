@@ -33,7 +33,7 @@ export const LeftButton = (props) => {
         hasShadow={props.hasShadow}
         label={props.isRTL ? 'Go to Next Slide' : 'Go to Previous Slide'}
         onClick={props.isDisabled ? undefined : props.onClick}
-      />
+        size="large" />
     </div>
   );
 };
@@ -56,7 +56,7 @@ export const RightButton = (props) => {
         hasShadow={props.hasShadow}
         label={props.isRTL ? 'Go to Previous Slide' : 'Go to Next Slide'}
         onClick={props.isDisabled ? undefined : props.onClick}
-      />
+        size="large" />
     </div>
   );
 };
@@ -72,7 +72,7 @@ export const MediaButton = (props) => {
         hasShadow={props.hasShadow}
         label={props.isPlaying ? 'Pause Autoplay' : 'Start Autoplay'}
         onClick={props.onClick}
-      />
+        size="large" />
     </div>
   );
 };
@@ -95,7 +95,7 @@ export const SizeButton = (props) => {
         hasShadow={props.hasShadow}
         label={props.isMaximized ? 'Minimize Slides' : 'Maximize Slides'}
         onClick={props.onClick}
-      />
+        size="large" />
     </div>
   );
 };
@@ -171,7 +171,7 @@ export const DotButtons = (props) => {
             }
             hasShadow={props.hasShadow}
             onClick={callbacks[key]}
-          />
+            size="large" />
         ))}
       </div>
     </div>

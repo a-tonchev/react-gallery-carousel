@@ -37,9 +37,10 @@
   }
 }
 
-/*Only for FireFox*/
+/*Only for FireFox
 @-moz-document url-prefix() {
   .thumbnail {
     font-size: $scale;
   }
 }
+*/

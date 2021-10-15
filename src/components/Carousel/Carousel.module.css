@@ -47,7 +47,7 @@
 }
 
 .gallery {
-  background-color: #000;
+  background-color: #000000;
 }
 
 [data-is-not-keyboard-user='true'] *:focus {
