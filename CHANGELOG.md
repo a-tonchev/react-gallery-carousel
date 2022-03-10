@@ -1,8 +1,102 @@
-# v0.2
-
 ```react-gallery-carousel```
 
 [![NPM](https://img.shields.io/npm/v/react-gallery-carousel.svg)](https://www.npmjs.com/package/react-gallery-carousel)
+
+## v0.2.9 (2022-01-30)
+
+### Bug Fixes
+
+- Third attempt to fix swiping stuck after zoom issue.
+  ([Issue #44](https://github.com/yifaneye/react-gallery-carousel/issues/44))
+
+## v0.2.8 (2021-12-23)
+
+### Bug Fixes
+
+- Second attempt to fix swiping stuck after zoom issue.
+  ([Issue #44](https://github.com/yifaneye/react-gallery-carousel/issues/44))
+
+### Enhancements
+
+- Simplify Gatsby example
+
+## v0.2.7 (2021-12-18)
+
+### Enhancements
+
+- Fix "invalid or unexpected token" issue in Next.js.
+  ([Issue #51](https://github.com/yifaneye/react-gallery-carousel/issues/51))
+
+- Remove request to "object Object"
+  ([Issue #52](https://github.com/yifaneye/react-gallery-carousel/issues/52))
+
+## v0.2.6 (2021-12-06)
+
+### Enhancements
+
+- Fix swiping stuck after zoom issue.
+  ([Issue #44](https://github.com/yifaneye/react-gallery-carousel/issues/44))
+
+- Remove title for icons.
+  ([Issue #60](https://github.com/yifaneye/react-gallery-carousel/issues/60))
+
+## v0.2.5 (2021-10-30)
+
+### Enhancements
+
+- Added **support for custom children for the thumbnails**.
+  ([Issue #40](https://github.com/yifaneye/react-gallery-carousel/issues/40))
+
+- Enhanced docs.
+
+## v0.2.4 (2021-08-22)
+
+### Enhancements
+
+- Enhanced docs.
+  ([Issue #43](https://github.com/yifaneye/react-gallery-carousel/issues/43))
+
+- Enhanced code and examples.
+- Set up momentum-based mouse dragging on the thumbnails.
+
+## v0.2.3 (2021-07-12)
+
+### Enhancements
+
+- Made the code robuster.
+  ([Issue #31](https://github.com/yifaneye/react-gallery-carousel/issues/31))
+
+- Enhanced docs.
+  ([Issue #35](https://github.com/yifaneye/react-gallery-carousel/issues/35))
+
+- Added **support for server-side rendering (SSR)**.
+  ([Issue #36](https://github.com/yifaneye/react-gallery-carousel/issues/36))
+
+- Enhanced examples.
+  ([Issue #45](https://github.com/yifaneye/react-gallery-carousel/issues/45))
+
+## v0.2.2 (2021-05-16)
+
+### Enhancements
+
+- Enhanced the documentation regarding user-managed slides.
+  ([Issue #28](https://github.com/yifaneye/react-gallery-carousel/issues/28))
+
+- Updated the [demo site](https://yifanai.com/rgc).
+
+## v0.2.1 (2021-05-08)
+
+### Bug Fixes
+
+- Fixed issue where caption for an image always has vertical and horizontal scroll bars even they are not required.
+  ([Issue #26](https://github.com/yifaneye/react-gallery-carousel/issues/26))
+
+### Enhancements
+
+- Enhanced content on the [demo site](https://yifanai.com/rgc).
+
+- Enhanced examples and content in the [documentation](https://yifanai.com/rgc).
+  ([Issue #28](https://github.com/yifaneye/react-gallery-carousel/issues/28))
 
 ## v0.2.0 (2021-05-02)
 
