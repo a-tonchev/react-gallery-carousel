@@ -42,7 +42,7 @@ Array [
                 className="image"
                 onError={[Function]}
                 onLoad={[Function]}
-                src=""
+                src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
                 srcSet={null}
                 style={
                   Object {
@@ -54,7 +54,7 @@ Array [
                 alt="Dog No. 1. Dogs are domesticated mammals, not natural wild animals. They were originally bred from wolves. They have been bred by humans for a long time, and were the first animals ever to be domesticated."
                 className="thumbnail"
                 onError={[Function]}
-                src=""
+                src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
                 style={
                   Object {
                     "objectFit": "contain",
@@ -77,7 +77,7 @@ Array [
                 className="image"
                 onError={[Function]}
                 onLoad={[Function]}
-                src=""
+                src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
                 srcSet={null}
                 style={
                   Object {
@@ -89,7 +89,7 @@ Array [
                 alt="Dog No. 2. Dogs are domesticated mammals, not natural wild animals. They were originally bred from wolves. They have been bred by humans for a long time, and were the first animals ever to be domesticated."
                 className="thumbnail"
                 onError={[Function]}
-                src=""
+                src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
                 style={
                   Object {
                     "objectFit": "contain",
@@ -112,7 +112,7 @@ Array [
                 className="image"
                 onError={[Function]}
                 onLoad={[Function]}
-                src=""
+                src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
                 srcSet={null}
                 style={
                   Object {
@@ -124,7 +124,7 @@ Array [
                 alt="Dog No. 3. Dogs are domesticated mammals, not natural wild animals. They were originally bred from wolves. They have been bred by humans for a long time, and were the first animals ever to be domesticated."
                 className="thumbnail"
                 onError={[Function]}
-                src=""
+                src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
                 style={
                   Object {
                     "objectFit": "contain",
@@ -147,7 +147,7 @@ Array [
                 className="image"
                 onError={[Function]}
                 onLoad={[Function]}
-                src=""
+                src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
                 srcSet={null}
                 style={
                   Object {
@@ -159,7 +159,7 @@ Array [
                 alt="Dog No. 4. Dogs are domesticated mammals, not natural wild animals. They were originally bred from wolves. They have been bred by humans for a long time, and were the first animals ever to be domesticated."
                 className="thumbnail"
                 onError={[Function]}
-                src=""
+                src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
                 style={
                   Object {
                     "objectFit": "contain",
@@ -182,7 +182,7 @@ Array [
                 className="image"
                 onError={[Function]}
                 onLoad={[Function]}
-                src=""
+                src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
                 srcSet={null}
                 style={
                   Object {
@@ -194,7 +194,7 @@ Array [
                 alt="Dog No. 5. Dogs are domesticated mammals, not natural wild animals. They were originally bred from wolves. They have been bred by humans for a long time, and were the first animals ever to be domesticated."
                 className="thumbnail"
                 onError={[Function]}
-                src=""
+                src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
                 style={
                   Object {
                     "objectFit": "contain",
@@ -217,7 +217,7 @@ Array [
                 className="image"
                 onError={[Function]}
                 onLoad={[Function]}
-                src=""
+                src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
                 srcSet={null}
                 style={
                   Object {
@@ -229,7 +229,7 @@ Array [
                 alt="Dog No. 6. Dogs are domesticated mammals, not natural wild animals. They were originally bred from wolves. They have been bred by humans for a long time, and were the first animals ever to be domesticated."
                 className="thumbnail"
                 onError={[Function]}
-                src=""
+                src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
                 style={
                   Object {
                     "objectFit": "contain",
@@ -262,9 +262,6 @@ Array [
               width="30"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <title>
-                Play
-              </title>
               <path
                 d="m1 1v28l28-14z"
               />
@@ -306,9 +303,6 @@ Array [
               width="30"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <title>
-                Minimize
-              </title>
               <path
                 d="m6 1v5h-5v5h10v-10zm13 0v10h10v-5h-5v-5zm-18 18v5h5v5h5v-10zm18 0v10h5v-5h5v-5z"
               />
@@ -338,9 +332,6 @@ Array [
               width="20"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <title>
-                Left
-              </title>
               <path
                 d="m19 1v37l-18-20z"
               />
@@ -370,9 +361,6 @@ Array [
               width="20"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <title>
-                Right
-              </title>
               <path
                 d="m1 1v38l18-19z"
               />
@@ -415,7 +403,7 @@ Array [
             aria-label="Dog No. 1. Dogs are domesticated mammals, not natural wild animals. They were originally bred from wolves. They have been bred by humans for a long time, and were the first animals ever to be domesticated."
             className="image"
             onError={[Function]}
-            src=""
+            src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
           />
         </li>
         <li
@@ -436,7 +424,7 @@ Array [
             aria-label="Dog No. 2. Dogs are domesticated mammals, not natural wild animals. They were originally bred from wolves. They have been bred by humans for a long time, and were the first animals ever to be domesticated."
             className="image"
             onError={[Function]}
-            src=""
+            src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
           />
         </li>
         <li
@@ -457,7 +445,7 @@ Array [
             aria-label="Dog No. 3. Dogs are domesticated mammals, not natural wild animals. They were originally bred from wolves. They have been bred by humans for a long time, and were the first animals ever to be domesticated."
             className="image"
             onError={[Function]}
-            src=""
+            src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
           />
         </li>
         <li
@@ -478,7 +466,7 @@ Array [
             aria-label="Dog No. 4. Dogs are domesticated mammals, not natural wild animals. They were originally bred from wolves. They have been bred by humans for a long time, and were the first animals ever to be domesticated."
             className="image"
             onError={[Function]}
-            src=""
+            src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
           />
         </li>
         <li
@@ -499,7 +487,7 @@ Array [
             aria-label="Dog No. 5. Dogs are domesticated mammals, not natural wild animals. They were originally bred from wolves. They have been bred by humans for a long time, and were the first animals ever to be domesticated."
             className="image"
             onError={[Function]}
-            src=""
+            src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
           />
         </li>
         <li
@@ -520,7 +508,7 @@ Array [
             aria-label="Dog No. 6. Dogs are domesticated mammals, not natural wild animals. They were originally bred from wolves. They have been bred by humans for a long time, and were the first animals ever to be domesticated."
             className="image"
             onError={[Function]}
-            src=""
+            src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
           />
         </li>
       </ul>
@@ -562,7 +550,7 @@ exports[`Carousel renders the same as snapshot 1`] = `
               className="image"
               onError={[Function]}
               onLoad={[Function]}
-              src=""
+              src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
               srcSet={null}
               style={
                 Object {
@@ -574,7 +562,7 @@ exports[`Carousel renders the same as snapshot 1`] = `
               alt={null}
               className="thumbnail hidden"
               onError={[Function]}
-              src=""
+              src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
               style={
                 Object {
                   "objectFit": null,
@@ -597,7 +585,7 @@ exports[`Carousel renders the same as snapshot 1`] = `
               className="image"
               onError={[Function]}
               onLoad={[Function]}
-              src=""
+              src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
               srcSet={null}
               style={
                 Object {
@@ -609,7 +597,7 @@ exports[`Carousel renders the same as snapshot 1`] = `
               alt={null}
               className="thumbnail hidden"
               onError={[Function]}
-              src=""
+              src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
               style={
                 Object {
                   "objectFit": null,
@@ -632,7 +620,7 @@ exports[`Carousel renders the same as snapshot 1`] = `
               className="image"
               onError={[Function]}
               onLoad={[Function]}
-              src=""
+              src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
               srcSet={null}
               style={
                 Object {
@@ -644,7 +632,7 @@ exports[`Carousel renders the same as snapshot 1`] = `
               alt={null}
               className="thumbnail hidden"
               onError={[Function]}
-              src=""
+              src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
               style={
                 Object {
                   "objectFit": null,
@@ -667,7 +655,7 @@ exports[`Carousel renders the same as snapshot 1`] = `
               className="image"
               onError={[Function]}
               onLoad={[Function]}
-              src=""
+              src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
               srcSet={null}
               style={
                 Object {
@@ -679,7 +667,7 @@ exports[`Carousel renders the same as snapshot 1`] = `
               alt={null}
               className="thumbnail hidden"
               onError={[Function]}
-              src=""
+              src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
               style={
                 Object {
                   "objectFit": null,
@@ -702,7 +690,7 @@ exports[`Carousel renders the same as snapshot 1`] = `
               className="image"
               onError={[Function]}
               onLoad={[Function]}
-              src=""
+              src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
               srcSet={null}
               style={
                 Object {
@@ -714,7 +702,7 @@ exports[`Carousel renders the same as snapshot 1`] = `
               alt={null}
               className="thumbnail hidden"
               onError={[Function]}
-              src=""
+              src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
               style={
                 Object {
                   "objectFit": null,
@@ -747,9 +735,6 @@ exports[`Carousel renders the same as snapshot 1`] = `
             width="30"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <title>
-              Play
-            </title>
             <path
               d="m1 1v28l28-14z"
             />
@@ -791,9 +776,6 @@ exports[`Carousel renders the same as snapshot 1`] = `
             width="30"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <title>
-              Maximize
-            </title>
             <path
               d="m1 1v10h5v-5h5v-5zm18 0v5h5v5h5v-10zm-18 18v10h10v-5h-5v-5zm18 5v5h10v-10h-5v5z"
             />
@@ -823,9 +805,6 @@ exports[`Carousel renders the same as snapshot 1`] = `
             width="20"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <title>
-              Left
-            </title>
             <path
               d="m19 1v37l-18-20z"
             />
@@ -855,9 +834,6 @@ exports[`Carousel renders the same as snapshot 1`] = `
             width="20"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <title>
-              Right
-            </title>
             <path
               d="m1 1v38l18-19z"
             />
@@ -900,7 +876,7 @@ exports[`Carousel renders the same as snapshot 1`] = `
           aria-label={null}
           className="image"
           onError={[Function]}
-          src=""
+          src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
         />
       </li>
       <li
@@ -921,7 +897,7 @@ exports[`Carousel renders the same as snapshot 1`] = `
           aria-label={null}
           className="image"
           onError={[Function]}
-          src=""
+          src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
         />
       </li>
       <li
@@ -942,7 +918,7 @@ exports[`Carousel renders the same as snapshot 1`] = `
           aria-label={null}
           className="image"
           onError={[Function]}
-          src=""
+          src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
         />
       </li>
       <li
@@ -963,7 +939,7 @@ exports[`Carousel renders the same as snapshot 1`] = `
           aria-label={null}
           className="image"
           onError={[Function]}
-          src=""
+          src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
         />
       </li>
       <li
@@ -984,7 +960,7 @@ exports[`Carousel renders the same as snapshot 1`] = `
           aria-label={null}
           className="image"
           onError={[Function]}
-          src=""
+          src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAAAAAA6fptVAAAACklEQVR4nGNiAAAABgADNjd8qAAAAABJRU5ErkJggg=="
         />
       </li>
     </ul>

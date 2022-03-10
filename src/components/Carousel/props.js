@@ -15,6 +15,7 @@ export const propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node
   ]),
+  thumbnails: PropTypes.arrayOf(PropTypes.node),
   isRTL: PropTypes.bool,
   isLoop: PropTypes.bool,
   isMaximized: PropTypes.bool,

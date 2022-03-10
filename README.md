@@ -43,7 +43,7 @@ I have **used and carefully analyzed a lot of carousel/slider components**. I su
 13. Some of them disable pinching to zoom, while some others glitch when pinching with 2 fingers. Besides, when the window is zoomed in, most of them still detect for touch swiping to move to the previous, or the next slide, while the intention of most users in this scenario is panning to see other parts of the current slide.
 14. Some of them will cause the slides to stuck its position on window resize or on mobile device orientation change, until another user interaction.
 15. Some of them can only have predetermined images (i.e. before the carousel component mounts).
-16. Most of them do not provide a solution for fallback image (for when an image is not available).
+16. Most of them do not provide a solution for fallback/placeholder image (for when an image is not available).
 17. Some of them get zoomed in when the user double taps on the control, while the intention of most users in this scenario is to quickly go to the next after the next slide.
 18. Some of them remove the left or right button to indicate that there are no more slides in that direction. However, user is likely to click that spot where the button used to be, which causes undesired behaviours e.g. clicking on a link or button which is also at that spot.
 19. Some of them use the method of cloning the first, and the last slide to achieve looping (or infinite mode). I think that method is not great semantically.
@@ -125,6 +125,7 @@ To customize the carousel, use the following props:
 |:------------------------|:---------------------|:------------|:----------|
 |images                   |Array                 |undefined    |Array of image(s) to be placed in the carousel. Each image object (e.g. [example object](#image-object-example)) in the array has a required attribute 'src'.|
 |children                 |node or Array of nodes|undefined    |HTML element(s) to be placed into the carousel for user-managed slides. It (they) will be placed only if the 'images' prop is falsy.|
+|thumbnails               |Array of nodes        |undefined    |HTML element(s) to be placed into the thumbnail view at the bottom. If not provided, the slides will be used. If provided, it must have the same length as the slides.|
 |index                    |Number                |undefined    |Initial (0-indexed) index of the slides of the carousel as a whole number starting from 0.|
 |isRTL                    |Boolean               |false        |If true, the slides of the carousel starts from the right (and also auto plays from the right to the left).|
 |isLoop                   |Boolean               |true         |If true, the carousel form a loop (i.e. going left from the left-most slide lands at the right-most slide, and vice versa) from the ribbon of slides.|
@@ -256,13 +257,13 @@ A: Yes. [```@types/react-gallery-carousel```](https://www.npmjs.com/package/@typ
 ## Roadmap
 - [x] Support for dynamic images (since v0.1.1)
 - [x] Support handlers and listeners (since v0.2.0)
-- [x] Support for server-side rendering (since v0.2.3)
-- [ ] Momentum-based mouse dragging on thumbnails (in progress)
 - [x] Add TypeScript type Definitions (since v0.2.0)
-- [ ] Use TypeScript
-- [ ] Allow customization through render props
+- [x] Support for server-side rendering (since v0.2.3)
+- [x] Momentum-based mouse dragging on thumbnails (since v0.2.4)
 - [ ] Implement more unit tests and E2E tests
+- [ ] Use TypeScript
 - [ ] GitHub Actions
+- [ ] Allow customization through render props
 
 ## Contributing
 

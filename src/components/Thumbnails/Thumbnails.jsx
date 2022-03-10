@@ -37,6 +37,7 @@ export const Thumbnails = (props) => {
               reference={thumbnailRef}
               thumbnailsContainerRef={thumbnailsContainerRef}
               slide={props.customThumbnails?.[index] || props.slides[key]}
+              thumbnail={props.thumbnails[key]}
               isImage={props.hasImages}
               shouldLazyLoad={props.shouldLazyLoad}
               isCurrent={Number(key) === props.curIndex}
@@ -57,9 +58,11 @@ Thumbnails.propTypes = {
   height: PropTypes.string,
   isRTL: PropTypes.bool.isRequired,
   slides: PropTypes.array.isRequired,
+  thumbnails: PropTypes.array,
   hasImages: PropTypes.bool.isRequired,
   shouldLazyLoad: PropTypes.bool.isRequired,
-  curIndex: PropTypes.number.isRequired
+  curIndex: PropTypes.number.isRequired,
+  ignoreReducedMotion: PropTypes.bool,
 };
 
 Thumbnails.defaultProps = {
