@@ -497,7 +497,6 @@ const GalleryCarousel = (props, ref) => {
       curIndex={slides.curIndex}
       callbacks={goToIndexCallbacksObject}
       ignoreReducedMotion={props.ignoreReducedMotion}
-      customThumbnails={props.customThumbnails}
     />
   );
 

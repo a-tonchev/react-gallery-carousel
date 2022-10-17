@@ -58,10 +58,11 @@ Thumbnails.propTypes = {
   height: PropTypes.string,
   isRTL: PropTypes.bool.isRequired,
   slides: PropTypes.array.isRequired,
-  thumbnails: PropTypes.array.isRequired,
+  thumbnails: PropTypes.array,
   hasImages: PropTypes.bool.isRequired,
   shouldLazyLoad: PropTypes.bool.isRequired,
-  curIndex: PropTypes.number.isRequired
+  curIndex: PropTypes.number.isRequired,
+  ignoreReducedMotion: PropTypes.bool,
 };
 
 Thumbnails.defaultProps = {
