@@ -1,6 +1,64 @@
-```react-gallery-carousel```
+# ```react-gallery-carousel```
 
 [![NPM](https://img.shields.io/npm/v/react-gallery-carousel.svg)](https://www.npmjs.com/package/react-gallery-carousel)
+
+## v0.3.0 (2022-10-15)
+
+### Bug Fixes
+
+- Fix issue related to maximizing/minimizing not working when shouldMaximizeOnClick/shouldMinimizeOnClick is on, for Toggle Device Toolbar (simulated mobile devices).
+  ([Issue #74](https://github.com/yifaneye/react-gallery-carousel/issues/74))
+
+- Fix issue related to `npm install` not working for `/example`.
+  ([Issue #72](https://github.com/yifaneye/react-gallery-carousel/issues/72))
+
+### Enhancements
+
+- Update package dependencies. ([Issue #71](https://github.com/yifaneye/react-gallery-carousel/issues/71))
+
+## v0.2.10 (2022-08-03)
+
+### Enhancements
+
+- Add react 18 to peer dependencies.
+
+## v0.2.9 (2022-01-30)
+
+### Bug Fixes
+
+- Third attempt to fix swiping stuck after zoom issue.
+  ([Issue #44](https://github.com/yifaneye/react-gallery-carousel/issues/44))
+
+## v0.2.8 (2021-12-23)
+
+### Bug Fixes
+
+- Second attempt to fix swiping stuck after zoom issue.
+  ([Issue #44](https://github.com/yifaneye/react-gallery-carousel/issues/44))
+
+### Enhancements
+
+- Simplify Gatsby example
+
+## v0.2.7 (2021-12-18)
+
+### Enhancements
+
+- Fix "invalid or unexpected token" issue in Next.js.
+  ([Issue #51](https://github.com/yifaneye/react-gallery-carousel/issues/51))
+
+- Remove request to "object Object"
+  ([Issue #52](https://github.com/yifaneye/react-gallery-carousel/issues/52))
+
+## v0.2.6 (2021-12-06)
+
+### Enhancements
+
+- Fix swiping stuck after zoom issue.
+  ([Issue #44](https://github.com/yifaneye/react-gallery-carousel/issues/44))
+
+- Remove title for icons.
+  ([Issue #60](https://github.com/yifaneye/react-gallery-carousel/issues/60))
 
 ## v0.2.5 (2021-10-30)
 
