@@ -1,12 +1,14 @@
-import React from 'react';
-import styles from './UserSlide.module.scss';
 import PropTypes from 'prop-types';
 
-export const UserSlide = (props) => {
-  return <div className={`${styles.userSlide} ${
+import styles from './UserSlide.module.scss';
+
+export const UserSlide = props => (
+  <div className={`${styles.userSlide} ${
     (props.isMaximized ? props.classes?.slideMax : props.classes?.slide) || ''
-  }`}>{props.slide}</div>;
-};
+  }`}
+  >{props.slide}
+  </div>
+);
 
 UserSlide.propTypes = {
   slide: PropTypes.node.isRequired,
@@ -14,15 +16,16 @@ UserSlide.propTypes = {
   isMaximized: PropTypes.bool,
 };
 
-export const UserSlideThumbnail = (props) => {
-  return (
-    <div className={`${styles.userSlide} ${styles.thumbnail} ${
+export const UserSlideThumbnail = props => (
+  <div
+    className={`${styles.userSlide} ${styles.thumbnail} ${
       (props.isMaximized ? props.classes?.thumbnailSlideMax : props.classes?.thumbnailSlide) || ''
-    }`} tabIndex='-1'>
-      {props.slide}
-    </div>
-  );
-};
+    }`}
+    tabIndex="-1"
+  >
+    {props.slide}
+  </div>
+);
 
 UserSlideThumbnail.propTypes = {
   slide: PropTypes.node.isRequired,
