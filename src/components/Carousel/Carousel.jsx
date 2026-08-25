@@ -35,7 +35,30 @@ import {
 import ReversedMap from '../../utils/ReversedMap';
 import { propTypes, defaultProps, getSettings } from './props';
 
-const GalleryCarousel = (props, ref) => {
+/*
+  React 19 removed defaultProps for function components, and the automatic JSX runtime
+  (which this app compiles with) never copied them onto props in the first place. Every
+  prop the caller did not pass therefore arrived here as `undefined`, which broke swiping
+  in two ways:
+    - `props.onSwipeMoveX(...)` threw "not a function" on the very first touchmove, so
+      `applyTransitionX(displacementX)` at the end of handleSwipeMoveX never ran and the
+      slides never followed the finger;
+    - `props.swipeThreshold` was undefined, so the swipe-end distance test compared against
+      NaN, every comparison was false and every swipe was disqualified into a rollback.
+  Resolving the defaults here restores the pre-React-19 behaviour for every prop at once.
+  Only keys the caller left `undefined` fall back, exactly like createElement used to do.
+*/
+const withDefaults = (props) => {
+  const merged = { ...defaultProps };
+  Object.keys(props).forEach((key) => {
+    if (props[key] !== undefined) merged[key] = props[key];
+  });
+  return merged;
+};
+
+const GalleryCarousel = (rawProps, ref) => {
+  const props = withDefaults(rawProps);
+
   /* initialize references */
   const documentRef = useRef(isSSR ? undefined : document);
   const maximizedBackgroundRef = useRef(null);
@@ -595,4 +618,5 @@ export const Carousel = forwardRef(GalleryCarousel);
 
 Carousel.displayName = 'Carousel';
 Carousel.propTypes = propTypes;
-Carousel.defaultProps = defaultProps;
+// no `Carousel.defaultProps`: React 19 ignores it (and warns about it) — withDefaults above
+// resolves the same defaults inside the component instead.

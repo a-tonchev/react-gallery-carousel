@@ -42,7 +42,11 @@
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  touch-action: auto;
+  /* pan-y hands horizontal dragging to the touch handlers instead of letting the browser
+     claim it for a native scroll/history gesture (after which touchmove stops being
+     cancelable and the finger no longer drags the slides). Vertical page scrolling and
+     pinch to zoom stay native. */
+  touch-action: pan-y pinch-zoom;
   flex: 0 1 auto;
 }
 
